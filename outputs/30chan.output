@@ -1,0 +1,587 @@
+  ---- MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ---
+ |                                                                            |
+ |                Non-reactive quantum scattering calculations                |
+ |                     on atomic and molecular collisions                     |
+ |                                                                            |
+ |              Copyright (C) 2022 J. M. Hutson & C. R. Le Sueur              |
+ |                                                                            |
+ |                               Version 2022.0                               |
+ |                                                                            |
+ |                       Run on 26 Dec 2024   at 12:06:55                     |
+ |                                                                            |
+  ---- MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ---
+
+
+  This program is free software: you can redistribute it and/or modify it under
+  the terms of the GNU General Public License, version 3, as published by
+  the Free Software Foundation.
+
+  Publications resulting from the use of this program should cite both the
+  version of the program used:
+
+  J. M. Hutson & C. R. Le Sueur, MOLSCAT: a program for non-reactive quantum
+  scattering calculation on atomic and molecular collisions,
+  Version 2022.0, https//github.com/molscat/molscat
+
+  and the published paper:
+
+  J. M. Hutson & C. R. Le Sueur, Comput. Phys. Commun., 241, 9-18 (2019).
+
+
+  USING CODATA 2018 RECOMMENDED VALUES OF FUNDAMENTAL PHYSICAL CONSTANTS
+
+  MEMORY ALLOCATED TO MAIN WORKING ARRAY IS   1000000 (8-BYTE) WORDS (    7.63 MB)
+  2 INTEGERS CAN BE STORED IN EACH WORD.
+
+  PRINT LEVEL (IPRINT) = 12     OTHER PRINT CONTROLS  ISIGPR = 0
+
+  REDUCED MASS FOR INTERACTION =   3.238562808 ATOMIC MASS UNITS (DALTONS)
+
+  ======================================================================================================================
+
+  INTERACTION TYPE IS    DIATOMIC VIB-ROTOR  -  ATOM.  
+
+  MOLECULAR QUANTUM NUMBERS TAKEN FROM JLEVEL INPUT.  NLEVEL = 30
+
+  ENERGY LEVELS TAKEN FROM ELEVEL INPUT
+
+  QUANTUM NUMBERS FOR INTERACTING PAIR:
+  EACH PAIR STATE IS LABELLED BY  2 QUANTUM NUMBERS
+  EACH CHANNEL FUNCTION IS FORMED BY COMBINING A PAIR STATE WITH A VALUE OF L.
+  THE RESULTING BASIS SET IS ASYMPTOTICALLY DIAGONAL.
+
+  PAIR STATE     PAIR STATE QUANTUM NUMBERS    PAIR LEVEL     PAIR ENERGY (CM-1)
+                ----        J         V ----
+        1                   0         1           1             0.0000000
+        2                   0         2           2             0.0037842
+        3                   0         3           3             0.0075684
+        4                   0         4           4             0.0113527
+        5                   0         5           5             0.0151369
+        6                   0         6           6             0.0189211
+        7                   0         7           7             0.0227053
+        8                   0         8           8             0.0264895
+        9                   0         9           9             0.0302737
+       10                   0        10          10             0.0340580
+       11                   0        11          11             0.0378422
+       12                   0        12          12             0.0416264
+       13                   0        13          13             0.0454106
+       14                   0        14          14             0.0491948
+       15                   0        15          15             0.0529790
+       16                   0        16          16             0.0567633
+       17                   0        17          17             0.0605475
+       18                   0        18          18             0.0643317
+       19                   0        19          19             0.0681159
+       20                   0        20          20             0.0719001
+       21                   0        21          21             0.0756843
+       22                   0        22          22             0.0794686
+       23                   0        23          23             0.0832528
+       24                   0        24          24             0.0870370
+       25                   0        25          25             0.0908212
+       26                   0        26          26             0.0946054
+       27                   0        27          27             0.0983896
+       28                   0        28          28             0.1021739
+       29                   0        29          29             0.1059581
+       30                   0        30          30             0.1097423
+
+  ======================================================================================================================
+  GENERAL-PURPOSE POTENL ROUTINE (MAY 18)
+
+  ANGULAR DEPENDENCE OF POTENTIAL EXPANDED IN TERMS OF
+  LEGENDRE POLYNOMIALS, P(LAMBDA).
+  INTEGRATED OVER DIATOM VIBRATIONAL FUNCTIONS
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   1
+  WHICH HAS LAMBDA =   0,  V =   1,  V-PRIME =   1
+
+                 5.36616119E+08 * R **-12
+                -2.01947580E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   2
+  WHICH HAS LAMBDA =   0,  V =   2,  V-PRIME =   2
+
+                 5.39537804E+08 * R **-12
+                -2.03047113E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   3
+  WHICH HAS LAMBDA =   0,  V =   3,  V-PRIME =   3
+
+                 5.42459489E+08 * R **-12
+                -2.04146646E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   4
+  WHICH HAS LAMBDA =   0,  V =   4,  V-PRIME =   4
+
+                 5.45381174E+08 * R **-12
+                -2.05246179E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   5
+  WHICH HAS LAMBDA =   0,  V =   5,  V-PRIME =   5
+
+                 5.48302859E+08 * R **-12
+                -2.06345712E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   6
+  WHICH HAS LAMBDA =   0,  V =   6,  V-PRIME =   6
+
+                 5.51224544E+08 * R **-12
+                -2.07445246E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   7
+  WHICH HAS LAMBDA =   0,  V =   7,  V-PRIME =   7
+
+                 5.54146228E+08 * R **-12
+                -2.08544779E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   8
+  WHICH HAS LAMBDA =   0,  V =   8,  V-PRIME =   8
+
+                 5.57067913E+08 * R **-12
+                -2.09644312E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   9
+  WHICH HAS LAMBDA =   0,  V =   9,  V-PRIME =   9
+
+                 5.59989598E+08 * R **-12
+                -2.10743845E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  10
+  WHICH HAS LAMBDA =   0,  V =  10,  V-PRIME =  10
+
+                 5.62911283E+08 * R **-12
+                -2.11843378E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  11
+  WHICH HAS LAMBDA =   0,  V =  11,  V-PRIME =  11
+
+                 5.65832968E+08 * R **-12
+                -2.12942911E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  12
+  WHICH HAS LAMBDA =   0,  V =  12,  V-PRIME =  12
+
+                 5.68754653E+08 * R **-12
+                -2.14042444E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  13
+  WHICH HAS LAMBDA =   0,  V =  13,  V-PRIME =  13
+
+                 5.71676338E+08 * R **-12
+                -2.15141977E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  14
+  WHICH HAS LAMBDA =   0,  V =  14,  V-PRIME =  14
+
+                 5.74598022E+08 * R **-12
+                -2.16241510E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  15
+  WHICH HAS LAMBDA =   0,  V =  15,  V-PRIME =  15
+
+                 5.77519707E+08 * R **-12
+                -2.17341043E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  16
+  WHICH HAS LAMBDA =   0,  V =  16,  V-PRIME =  16
+
+                 5.80441392E+08 * R **-12
+                -2.18440577E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  17
+  WHICH HAS LAMBDA =   0,  V =  17,  V-PRIME =  17
+
+                 5.83363077E+08 * R **-12
+                -2.19540110E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  18
+  WHICH HAS LAMBDA =   0,  V =  18,  V-PRIME =  18
+
+                 5.86284762E+08 * R **-12
+                -2.20639643E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  19
+  WHICH HAS LAMBDA =   0,  V =  19,  V-PRIME =  19
+
+                 5.89206447E+08 * R **-12
+                -2.21739176E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  20
+  WHICH HAS LAMBDA =   0,  V =  20,  V-PRIME =  20
+
+                 5.92128132E+08 * R **-12
+                -2.22838709E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  21
+  WHICH HAS LAMBDA =   0,  V =  21,  V-PRIME =  21
+
+                 5.95049817E+08 * R **-12
+                -2.23938242E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  22
+  WHICH HAS LAMBDA =   0,  V =  22,  V-PRIME =  22
+
+                 5.97971501E+08 * R **-12
+                -2.25037775E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  23
+  WHICH HAS LAMBDA =   0,  V =  23,  V-PRIME =  23
+
+                 6.00893186E+08 * R **-12
+                -2.26137308E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  24
+  WHICH HAS LAMBDA =   0,  V =  24,  V-PRIME =  24
+
+                 6.03814871E+08 * R **-12
+                -2.27236841E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  25
+  WHICH HAS LAMBDA =   0,  V =  25,  V-PRIME =  25
+
+                 6.06736556E+08 * R **-12
+                -2.28336374E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  26
+  WHICH HAS LAMBDA =   0,  V =  26,  V-PRIME =  26
+
+                 6.09658241E+08 * R **-12
+                -2.29435908E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  27
+  WHICH HAS LAMBDA =   0,  V =  27,  V-PRIME =  27
+
+                 6.12579926E+08 * R **-12
+                -2.30535441E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  28
+  WHICH HAS LAMBDA =   0,  V =  28,  V-PRIME =  28
+
+                 6.15501611E+08 * R **-12
+                -2.31634974E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  29
+  WHICH HAS LAMBDA =   0,  V =  29,  V-PRIME =  29
+
+                 6.18423295E+08 * R **-12
+                -2.32734507E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  30
+  WHICH HAS LAMBDA =   0,  V =  30,  V-PRIME =  30
+
+                 6.21344980E+08 * R **-12
+                -2.33834040E+03 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  31
+  WHICH HAS LAMBDA =   0,  V =   1,  V-PRIME =   2
+
+                 4.15840488E+05 * R **-12
+                -1.78258097E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  32
+  WHICH HAS LAMBDA =   0,  V =   2,  V-PRIME =   3
+
+                 4.18092331E+05 * R **-12
+                -1.79223393E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  33
+  WHICH HAS LAMBDA =   0,  V =   3,  V-PRIME =   4
+
+                 4.20344175E+05 * R **-12
+                -1.80188690E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  34
+  WHICH HAS LAMBDA =   0,  V =   4,  V-PRIME =   5
+
+                 4.22596019E+05 * R **-12
+                -1.81153986E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  35
+  WHICH HAS LAMBDA =   0,  V =   5,  V-PRIME =   6
+
+                 4.24847863E+05 * R **-12
+                -1.82119283E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  36
+  WHICH HAS LAMBDA =   0,  V =   6,  V-PRIME =   7
+
+                 4.27099707E+05 * R **-12
+                -1.83084579E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  37
+  WHICH HAS LAMBDA =   0,  V =   7,  V-PRIME =   8
+
+                 4.29351550E+05 * R **-12
+                -1.84049876E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  38
+  WHICH HAS LAMBDA =   0,  V =   8,  V-PRIME =   9
+
+                 4.31603394E+05 * R **-12
+                -1.85015172E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  39
+  WHICH HAS LAMBDA =   0,  V =   9,  V-PRIME =  10
+
+                 4.33855238E+05 * R **-12
+                -1.85980469E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  40
+  WHICH HAS LAMBDA =   0,  V =  10,  V-PRIME =  11
+
+                 4.36107082E+05 * R **-12
+                -1.86945766E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  41
+  WHICH HAS LAMBDA =   0,  V =  11,  V-PRIME =  12
+
+                 4.38358926E+05 * R **-12
+                -1.87911062E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  42
+  WHICH HAS LAMBDA =   0,  V =  12,  V-PRIME =  13
+
+                 4.40610769E+05 * R **-12
+                -1.88876359E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  43
+  WHICH HAS LAMBDA =   0,  V =  13,  V-PRIME =  14
+
+                 4.42862613E+05 * R **-12
+                -1.89841655E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  44
+  WHICH HAS LAMBDA =   0,  V =  14,  V-PRIME =  15
+
+                 4.45114457E+05 * R **-12
+                -1.90806952E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  45
+  WHICH HAS LAMBDA =   0,  V =  15,  V-PRIME =  16
+
+                 4.47366301E+05 * R **-12
+                -1.91772248E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  46
+  WHICH HAS LAMBDA =   0,  V =  16,  V-PRIME =  17
+
+                 4.49618145E+05 * R **-12
+                -1.92737545E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  47
+  WHICH HAS LAMBDA =   0,  V =  17,  V-PRIME =  18
+
+                 4.51869988E+05 * R **-12
+                -1.93702841E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  48
+  WHICH HAS LAMBDA =   0,  V =  18,  V-PRIME =  19
+
+                 4.54121832E+05 * R **-12
+                -1.94668138E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  49
+  WHICH HAS LAMBDA =   0,  V =  19,  V-PRIME =  20
+
+                 4.56373676E+05 * R **-12
+                -1.95633434E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  50
+  WHICH HAS LAMBDA =   0,  V =  20,  V-PRIME =  21
+
+                 4.58625520E+05 * R **-12
+                -1.96598731E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  51
+  WHICH HAS LAMBDA =   0,  V =  21,  V-PRIME =  22
+
+                 4.60877364E+05 * R **-12
+                -1.97564028E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  52
+  WHICH HAS LAMBDA =   0,  V =  22,  V-PRIME =  23
+
+                 4.63129207E+05 * R **-12
+                -1.98529324E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  53
+  WHICH HAS LAMBDA =   0,  V =  23,  V-PRIME =  24
+
+                 4.65381051E+05 * R **-12
+                -1.99494621E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  54
+  WHICH HAS LAMBDA =   0,  V =  24,  V-PRIME =  25
+
+                 4.67632895E+05 * R **-12
+                -2.00459917E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  55
+  WHICH HAS LAMBDA =   0,  V =  25,  V-PRIME =  26
+
+                 4.69884739E+05 * R **-12
+                -2.01425214E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  56
+  WHICH HAS LAMBDA =   0,  V =  26,  V-PRIME =  27
+
+                 4.72136583E+05 * R **-12
+                -2.02390510E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  57
+  WHICH HAS LAMBDA =   0,  V =  27,  V-PRIME =  28
+
+                 4.74388426E+05 * R **-12
+                -2.03355807E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  58
+  WHICH HAS LAMBDA =   0,  V =  28,  V-PRIME =  29
+
+                 4.76640270E+05 * R **-12
+                -2.04321103E+01 * R ** -6
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  59
+  WHICH HAS LAMBDA =   0,  V =  29,  V-PRIME =  30
+
+                 4.78892114E+05 * R **-12
+                -2.05286400E+01 * R ** -6
+
+  POTENL PROCESSING FINISHED.
+
+  POTENTIAL RETURNED IN UNITS OF EPSIL  =  219474.88     CM-1
+
+  ALL LENGTHS ARE IN UNITS OF BOHR (  0.52917721 ANGSTROM ) UNLESS OTHERWISE STATED
+
+  NO DUPLICATED SETS OF INDICES IN LAMBDA ARRAY
+  INTERACTION MATRIX USES   1 BLOCKS OF VL ARRAY FOR R-DEPENDENT TERMS IN POTENTIAL
+
+  ======================================================================================================================
+
+  PROPAGATION METHODS FOR COUPLED EQUATIONS SPECIFIED BY IPROPS =  6 AND IPROPL =  6
+
+  COUPLED EQUATIONS WILL BE PROPAGATED OUTWARDS IN 2 SEGMENTS
+
+  PROPAGATION RANGES ARE CONTROLLED BY VARIABLES RMIN, RMID AND RMAX, WITH INPUT VALUES
+  RMIN =   6.500     RMID =   6.500     RMAX =   20.00    
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  SEGMENT 1 WILL BE PROPAGATED OUTWARDS
+
+  FROM RMIN =      6.50 TO RMID =      6.50
+
+  COUPLED EQUATIONS SOLVED BY DIABATIC MODIFIED LOG-DERIVATIVE PROPAGATOR OF MANOLOPOULOS
+
+  PROPAGATION STEP SIZE DETERMINED USING DR =  2.000E-02
+  STEP SIZE CONSTANT THROUGHOUT RANGE
+  STEP SIZE MAY BE ADJUSTED SLIGHTLY SO THAT RANGE IS A WHOLE NUMBER OF STEPS
+
+  LOG-DERIVATIVE MATRIX INITIALISED IN THE LOCAL EIGENBASIS AT RMIN
+  LOCALLY CLOSED CHANNELS INITIALISED WITH A WKB BOUNDARY CONDITION
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  SEGMENT 2 WILL BE PROPAGATED OUTWARDS
+
+  FROM RMID =      6.50 TO RMAX =     20.00
+
+  COUPLED EQUATIONS SOLVED BY DIABATIC MODIFIED LOG-DERIVATIVE PROPAGATOR OF MANOLOPOULOS
+
+  PROPAGATION STEP SIZE DETERMINED USING DR =  1.000E-03
+  STEP SIZE CONSTANT THROUGHOUT RANGE
+  STEP SIZE MAY BE ADJUSTED SLIGHTLY SO THAT RANGE IS A WHOLE NUMBER OF STEPS
+
+  ======================================================================================================================
+
+  INPUT ENERGIES CONVERTED FROM AU
+  TO INTERNAL WORKING UNITS OF CM-1 DUE TO INTEGER INPUT EUNITS =   7
+
+  INPUT ENERGY LIST IS
+                    6.950346E-08
+
+  CALCULATIONS WILL BE PERFORMED FOR    1 ENERGY  
+  ENERGY    1           =  6.9503456708E-08 CM-1 =  3.1668105000E-13 AU      
+
+  ======================================================================================================================
+
+  TOTAL ANGULAR MOMENTUM JTOT =   0
+
+  EACH JTOT IS SPLIT INTO A MAXIMUM OF   2 SYMMETRY BLOCKS
+
+  STATE-TO-STATE INTEGRAL CROSS-SECTIONS WILL BE COMPUTED BUT NOT STORED ON DISK
+
+  ======================================================================================================================
+
+  INITIALIZATION DONE.  TIME WAS   0.00 CPU SECS.      2879 WORDS OF STORAGE USED.
+
+  ================================================= 30chan_scattering ==================================================
+
+  *****************************  ANGULAR MOMENTUM JTOT  =   0   AND SYMMETRY BLOCK  =    1  ****************************
+  BASIS-SET SIZE IS 0 FOR THIS SYMMETRY BLOCK
+  NO BASIS FUNCTIONS FOR THIS BLOCK   0   0
+
+  *****************************  ANGULAR MOMENTUM JTOT  =   0   AND SYMMETRY BLOCK  =    2  ****************************
+
+  CHANNEL FUNCTION LIST:
+
+  EACH CHANNEL FUNCTION IS FORMED BY COMBINING A PAIR STATE WITH A VALUE OF L.
+
+  CHANNEL  PAIR STATE    PAIR STATE QUANTUM NUMBERS            L        PAIR LEVEL   PAIR ENERGY (CM-1)
+                         ----      J         V   ----
+        1           1              0         1                 0             1         0.0000000
+        2           2              0         2                 0             2         0.0037842
+        3           3              0         3                 0             3         0.0075684
+        4           4              0         4                 0             4         0.0113527
+        5           5              0         5                 0             5         0.0151369
+        6           6              0         6                 0             6         0.0189211
+        7           7              0         7                 0             7         0.0227053
+        8           8              0         8                 0             8         0.0264895
+        9           9              0         9                 0             9         0.0302737
+       10          10              0        10                 0            10         0.0340580
+       11          11              0        11                 0            11         0.0378422
+       12          12              0        12                 0            12         0.0416264
+       13          13              0        13                 0            13         0.0454106
+       14          14              0        14                 0            14         0.0491948
+       15          15              0        15                 0            15         0.0529790
+       16          16              0        16                 0            16         0.0567633
+       17          17              0        17                 0            17         0.0605475
+       18          18              0        18                 0            18         0.0643317
+       19          19              0        19                 0            19         0.0681159
+       20          20              0        20                 0            20         0.0719001
+       21          21              0        21                 0            21         0.0756843
+       22          22              0        22                 0            22         0.0794686
+       23          23              0        23                 0            23         0.0832528
+       24          24              0        24                 0            24         0.0870370
+       25          25              0        25                 0            25         0.0908212
+       26          26              0        26                 0            26         0.0946054
+       27          27              0        27                 0            27         0.0983896
+       28          28              0        28                 0            28         0.1021739
+       29          29              0        29                 0            29         0.1059581
+       30          30              0        30                 0            30         0.1097423
+
+  COUPLED EQUATIONS PROPAGATED AT                                 ENERGY =  3.1668105000E-13 AU      
+
+  MDPROP. LOG-DERIVATIVE MATRIX PROPAGATED FROM       6.5000  TO  20.000      IN  13500  STEPS.
+
+  OPEN CHANNEL   WVEC (1/ANG.)    CHANNEL           L    PAIR LEVEL            PAIR ENERGY (CM-1)
+           1    1.15552971E-04         1            0         1              0.000000000000
+
+  ROW  COL       S**2                  PHASE/2PI              RE (S)                 IM (S)
+    1    1 1.0000000000000E+000  -4.4240743562418E-004   9.9999613655889E-001  -2.7797243195282E-003
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 6.1147998876396E-005   2.2729522962870E+001  -8.0285777051249E-013
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  2, ENERGY(  1) = 6.9503457E-08: MAX DIAG & OFF-DIAG =  1.82E+03 &   0.00E+00
+
+  SIGMA NOT PRINTED BECAUSE ISIGPR = 0
+
+
+  ---- MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ---
+ |                                                                            |
+ |                Non-reactive quantum scattering calculations                |
+ |                     on atomic and molecular collisions                     |
+ |                                                                            |
+ |              Copyright (C) 2022 J. M. Hutson & C. R. Le Sueur              |
+ |                                                                            |
+ |                               Version 2022.0                               |
+ |                                                                            |
+ |                    This run used       0.39 cpu secs and                   |
+ |               6696 of the allocated   1000000 words of storage             |
+ |                                                                            |
+  ---- MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ---

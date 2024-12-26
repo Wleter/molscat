@@ -29,7 +29,7 @@ LIBS     = -llapack -lblas
 # set up recipe rules =========================================================
 #
 # set flags for compilation
-COMPILE.f = $(Compiler) -std=legacy -c  -O0 -g
+COMPILE.f = $(Compiler) -std=legacy -c -O3
 LINK.f    = $(Compiler)
 #
 # pattern matching rules for generating object files from source code =========

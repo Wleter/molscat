@@ -1,0 +1,9 @@
+{
+    "terminal.integrated.profiles.windows": {
+        "Cygwin": {
+          "path": "C:\\cygwin64\\bin\\bash.exe",
+          "args": ["--login"],
+          "env": {"CHERE_INVOKING": "1"}
+        }
+    }
+}
