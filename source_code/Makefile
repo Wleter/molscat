@@ -6,6 +6,9 @@
 # set up directories ==========================================================
 OBJDIR  = .
 EXECDIR = .
+
+RUST_LIB_DIR = ../scattering-solver-rust-ffi/target/release
+RUST_LIB = -L$(RUST_LIB_DIR) -lscattering_solver_rust_ffi
 ###############################################################################
 #
 # set flags for linking =======================================================
@@ -15,7 +18,7 @@ EXECDIR = .
 # possible alternatives:
 # 1) gfortran
 Compiler = gfortran
-LIBS     = -llapack -lblas
+LIBS     = -llapack -lblas $(RUST_LIB)
 # 2) ifort
 #Compiler = ifort
 #LIBS     =

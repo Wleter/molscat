@@ -1,3 +1,14 @@
+      module rust_bindings
+      use iso_c_binding
+      implicit none
+    
+      interface
+      subroutine rust_function() bind(C, name="hello_from_rust")
+      end subroutine rust_function
+      end interface
+    
+      end module rust_bindings
+
       SUBROUTINE BAS9IN(PRTP,IBOUND,IPRINT)
 C  Copyright (C) 2022 J. M. Hutson & C. R. Le Sueur
 C  Distributed under the GNU General Public License, version 3
@@ -8,6 +19,7 @@ C  Distributed under the GNU General Public License, version 3
      c                              hartree_in_inv_cm,
      c                              inverse_fine_structure_constant,
      c                              speed_of_light_in_cm
+      use rust_bindings
 C
 C  BASE9 ROUTINE BY JM Hutson, DECEMBER 2006
 C  TWO MULTIPLET S ATOMS WITH NUCLEAR SPIN
@@ -69,6 +81,7 @@ C              CONSISTENT AND UP-TO-DATE VALUES
       GHZCM=speed_of_light_in_cm/Giga_in_SI
       AUCM=hartree_in_inv_cm
       BM=bohr_magneton
+      call rust_function()
 C
 C  BAS9IN IS CALLED ONCE FOR EACH SCATTERING SYSTEM (USUALLY ONCE
 C  PER RUN) AND CAN READ IN ANY BASIS SET INFORMATION NOT CONTAINED
