@@ -7,3 +7,6 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
+faer = "0.20.2"
+scattering-problems = { git = "https://github.com/Wleter/quantum-rs" }
+scattering-solver = { git = "https://github.com/Wleter/quantum-rs" }

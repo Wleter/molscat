@@ -1,6 +1,5 @@
 use std::{fs::File, io::Write};
 
-
 #[no_mangle]
 pub extern "C" fn hello_from_rust() {
     println!("Hello from rust");
@@ -12,4 +11,11 @@ pub extern "C" fn hello_from_rust() {
 
     let mut file = File::create(&path).expect("LULE1");
     file.write_all(buf.as_bytes()).expect("LULE2");
+}
+
+scattering_problems::alkali_rotor_atom
+
+#[no_mangle]
+pub extern "C" fn create_problem() -> *mut AlkaliRotorAtomProblem {
+
 }
