@@ -1,12 +1,73 @@
       module rust_bindings
       use iso_c_binding
       implicit none
-    
+
       interface
-      subroutine rust_function() bind(C, name="hello_from_rust")
-      end subroutine rust_function
+      function hifi_mel(s, ms_r, ms_c, i, mi_r, mi_c) 
+     1      result(res) bind(C, name="hifi_mel")
+        use iso_c_binding
+        integer(c_int), value :: s, ms_r, ms_c, i, mi_r, mi_c
+        real(c_double) :: res
+      end function hifi_mel
       end interface
-    
+
+      interface
+      function aniso_hifi_mel(l, n_c, n_r, j_tot_c, j_tot_r, mj_tot_c,
+     1      mj_tot_r, s, ms_c, ms_r, i, mi_c, mi_r) 
+     2      result(res) bind(C, name="aniso_hifi_mel")
+        use iso_c_binding
+        integer(c_int), value :: l, n_c, n_r, j_tot_c, j_tot_r
+        integer(c_int), value :: mj_tot_c, mj_tot_r, s, ms_c, ms_r
+        integer(c_int), value :: i, mi_c, mi_r
+        real(c_double) :: res
+      end function aniso_hifi_mel
+      end interface
+
+      interface
+      function spin_rot_mel(l, n, j_tot_c, j_tot_r, mj_tot_c,
+     1      mj_tot_r, s, ms_c, ms_r) 
+     2      result(res) bind(C, name="spin_rot_mel")
+        use iso_c_binding
+        integer(c_int), value :: l, n, j_tot_c, j_tot_r
+        integer(c_int), value :: mj_tot_c, mj_tot_r, s, ms_c, ms_r
+        real(c_double) :: res
+      end function spin_rot_mel
+      end interface
+
+      interface
+      function singlet_mel(lambda, l_c, l_r, n_c, n_r, j_tot,
+     1      s, ms_c, ms_r, sa, msa_c, msa_r) 
+     2      result(res) bind(C, name="singlet_mel")
+        use iso_c_binding
+        integer(c_int), value :: lambda, l_c, l_r, n_c, n_r, j_tot
+        integer(c_int), value :: s, ms_c, ms_r, sa, msa_c, msa_r
+        real(c_double) :: res
+      end function singlet_mel
+      end interface
+
+      interface
+      function triplet_mel(lambda, l_c, l_r, n_c, n_r, j_tot,
+     1      s, ms_c, ms_r, sa, msa_c, msa_r) 
+     2      result(res) bind(C, name="triplet_mel")
+        use iso_c_binding
+        integer(c_int), value :: lambda, l_c, l_r, n_c, n_r, j_tot
+        integer(c_int), value :: s, ms_c, ms_r, sa, msa_c, msa_r
+        real(c_double) :: res
+      end function triplet_mel
+      end interface
+
+      interface
+      function dipole_mel(l_c, l_r, n, j_tot_c, j_tot_r,
+     1      mj_tot_c, mj_tot_r, s, ms_c, ms_r, sa, msa_c, msa_r) 
+     2      result(res) bind(C, name="dipole_mel")
+        use iso_c_binding
+        integer(c_int), value :: l_c, l_r, n, j_tot_c, j_tot_r
+        integer(c_int), value :: mj_tot_c, mj_tot_r 
+        integer(c_int), value :: s, ms_c, ms_r, sa, msa_c, msa_r
+        real(c_double) :: res
+      end function dipole_mel
+      end interface
+
       end module rust_bindings
 
       SUBROUTINE BAS9IN(PRTP,IBOUND,IPRINT)
@@ -20,6 +81,7 @@ C  Distributed under the GNU General Public License, version 3
      c                              inverse_fine_structure_constant,
      c                              speed_of_light_in_cm
       use rust_bindings
+      use iso_c_binding
 C
 C  BASE9 ROUTINE BY JM Hutson, DECEMBER 2006
 C  TWO MULTIPLET S ATOMS WITH NUCLEAR SPIN
@@ -81,7 +143,14 @@ C              CONSISTENT AND UP-TO-DATE VALUES
       GHZCM=speed_of_light_in_cm/Giga_in_SI
       AUCM=hartree_in_inv_cm
       BM=bohr_magneton
-      call rust_function()
+
+      WRITE(6,*) "hifi_mel", hifi_mel(1, 1, 1, 1, -1, -1),
+     1 aniso_hifi_mel(1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1),
+     2 spin_rot_mel(1, 1, 1, 2, 1, 1, 1, 1, 1),
+     3 singlet_mel(0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+     4 triplet_mel(0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+     5 dipole_mel(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
 C
 C  BAS9IN IS CALLED ONCE FOR EACH SCATTERING SYSTEM (USUALLY ONCE
 C  PER RUN) AND CAN READ IN ANY BASIS SET INFORMATION NOT CONTAINED

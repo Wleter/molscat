@@ -7,7 +7,7 @@
 OBJDIR  = .
 EXECDIR = .
 
-RUST_LIB_DIR = ../scattering-solver-rust-ffi/target/release
+RUST_LIB_DIR = .
 RUST_LIB = -L$(RUST_LIB_DIR) -lscattering_solver_rust_ffi
 ###############################################################################
 #
